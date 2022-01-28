@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="display-4">Mieszkania</h1>
+<h1 class="display-4">Odczyty Wody</h1>
 
 <p>
-    <a class="btn btn-outline-primary" asp-action="Create">Dodaj Mieszkanie</a>
+    <a class="btn btn-primary" asp-action="Create">Dodaj Stan Licznika</a>
 </p>
 <table class="table">
     <thead>
@@ -26,7 +26,7 @@
             </td>
             <td>
                 @Html.ActionLink("Szczegóły", "Details", new { id = item.TaskId }, new { @class = "btn btn-info" })
-                @Html.ActionLink("Edytuj", "Edit", new { id = item.TaskId }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Edytuj", "Edit", new { id = item.TaskId }, new { @class = "btn btn-info" })
                 @Html.ActionLink("Usuń", "Delete", new { id = item.TaskId }, new { @class = "btn btn-danger" })
             </td>
         </tr>

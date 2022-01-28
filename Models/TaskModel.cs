@@ -13,11 +13,11 @@ namespace RentApplication.Models
     {
         [Key]
         public int TaskId { get; set; }
-        [DisplayName("Nazwa")]
+        [DisplayName("Nr mieszkania")]
         [Required(ErrorMessage = "Pole Nazwa jest wymagane.")]
         [MaxLength(50)]
         public string Name { get; set; }
-        [DisplayName("Opis")]
+        [DisplayName("Zużycie")]
         [MaxLength(2000)]
         public string Description { get; set; }
         public bool Done { get; set; }
